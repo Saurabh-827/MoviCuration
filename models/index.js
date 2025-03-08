@@ -10,6 +10,7 @@ const config = require(__dirname + "/../config/config.js")[env];
 const db = {};
 
 let sequelize;
+console.log(config.database);
 sequelize = new Sequelize(
 	config.database,
 	config.username,
